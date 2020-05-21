@@ -1,12 +1,12 @@
 body{
-    background-color: rgba(183, 194, 80, 0.5);
-    overflow-y: hidden;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 #calculator{
     width: 250px;
     padding: 10px;
-    margin: 8% auto;
+    margin: 0 auto;
+    /* margin-top: 80px; */
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .5);
 }
 #calculator input{
