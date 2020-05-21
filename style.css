@@ -24,3 +24,9 @@ body{
     margin: 0px 0px 15px 0px;
 }
 
+@media(max-width: 576px){
+    h1{
+        font-size: 1.5rem;
+        margin-top: 50px;
+    }
+}
