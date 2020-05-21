@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <section id="calculator" class="bg-dark py-3 rounded"> 
+        <div class="container">
+            <p class="text-right text-light">
+                <span class="d-block">Calculator</span>
+                <small class="d-block">Design By Mamun</small>
+            </p>
+            <form action="#" name="cal">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="screen" class="form-control px-2 py-4 text-right" disabled style="font-family: 'Orbitron', sans-serif;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="CE"
+                        onclick="cal.screen.value = '' ">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control border-0" type="button" value="C"
+                        onclick="cal.screen.value = ''">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="&larr;"
+                        onclick="cal.screen.value = cal.screen.value.slice(0, -1)">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="&radic;"
+                        onclick="cal.screen.value = Math.sqrt(cal.screen.value)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="7" 
+                        onclick="cal.screen.value += '7' ">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="8" 
+                        onclick="cal.screen.value += '8' ">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="9" 
+                        onclick="cal.screen.value += '9' ">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="+"
+                        onclick="cal.screen.value += '+' ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="4"
+                        onclick="cal.screen.value += '4' ">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="5"
+                        onclick="cal.screen.value += '5' ">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="6"
+                        onclick="cal.screen.value += '6' ">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="-"
+                        onclick="cal.screen.value += '-' ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="1"
+                        onclick="cal.screen.value += '1' ">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="2"
+                        onclick="cal.screen.value += '2' ">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="3"
+                        onclick="cal.screen.value += '3' ">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="*"
+                        onclick="cal.screen.value += '*' ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="0"
+                        onclick="cal.screen.value += '0' ">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="."
+                        onclick="cal.screen.value += '.' ">
+                    </div>
+                    <div class="col-3">
+                        <input id="m" class="form-control" type="button" value="="
+                        onclick="cal.screen.value = eval(cal.screen.value)">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="button" value="/"
+                        onclick="cal.screen.value += '/' ">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        document.getElementById("m")
+    </script>
+
+    
+
+    <!-- bootstrap js file -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
